@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Speed Test</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.ratatype.com/static/img/learn/keyboard/en.svg?v=2" type="image/x-icon">
 </head>
+
 <body>
     <section class="main-body">
         <h2>Typing Speed Test</h2>
+        <img src="https://www.ratatype.com/static/img/learn/keyboard/en.svg?v=2" alt="" height="100px" width="300px"
+            style="border: 1px solid rgb(168, 168, 168);">
         <p id="showSentence"></p>
 
         <div class="typing_section">
             <label for="textarea"></label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" disabled></textarea>
+            <textarea name="textarea" id="textarea" cols="50" rows="10" disabled></textarea>
             <br>
-            <button id="btn">Start  </button>
+            <button id="btn">Start </button>
         </div>
 
-        <p id="score">Your typing speed is 0 words per minutes & time taken 1 sec.</p>
+        <p id="score"></p>
     </section>
-
-
 
     <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,57 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, Arial, Helvetica, sans-serif;
 }
 
-html{
-    font-size: 60%;
+html {
+    font-size: 62.5%;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(191, 172, 226, 0.35);
+    background-color: rgb(226, 226, 226);
+    color: #047e00;
 }
 
-.typing-section{
+.main-body {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.typing_section {
     text-align: center;
+
 }
 
-#textarea{
-    border: .1rem solid #A084DC;
-    border-radius: 1rem;
-    max-width: 50rem;
-    width: 50rem;
+#textarea {
+    border: .2rem solid #047e00;
+    border-radius: .2rem;
+    width: 98%;
     height: 20rem;
     padding: 1rem 2rem;
     font-size: 1.6rem;
 }
 
-#btn{
+#btn {
     display: inline-block;
     padding: 1rem 2.4rem;
     border: none;
     border-radius: 1rem;
-    background-color: #645CBB;
+    background-color: #047e00;
+    ;
     color: #fff;
     font-size: 1.8rem;
     margin-top: 1.6rem;
+    cursor: pointer;
 }
 
-h2{
+h2 {
     font-size: 2.4rem;
     text-transform: capitalize;
-    color: #645CBB;
     text-align: center;
+    color: #047e00;
 }
 
-#showSentence, #score{
+#showSentence,
+#score {
+    width: 98%;
     font-size: 1.6rem;
     margin: 2rem 0;
     letter-spacing: .02rem;
     text-align: center;
+    color: black;
+}
+
+@media (min-width: 1600px) {
+    .typing_section {
+        width: 48%;
+
+    }
+
+    #textarea {
+        border-radius: .4rem;
+        width: 98%;
+        height: 20rem;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    #btn {
+        padding: 2rem 4rem;
+        font-size: 3rem;
+        margin-top: 3rem;
+        border-radius: 1.2rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    #showSentence,
+    #score {
+        width: 70%;
+        font-size: 3rem;
+        margin: 3rem 0;
+        letter-spacing: .3rem;
+    }
 }
